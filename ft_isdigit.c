@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esergeev <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: esergeev <esergeev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/17 17:30:12 by esergeev          #+#    #+#             */
-/*   Updated: 2025/05/17 17:32:32 by esergeev         ###   ########.fr       */
+/*   Created: 2025/05/19 16:58:18 by esergeev          #+#    #+#             */
+/*   Updated: 2025/05/19 16:58:29 by esergeev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_isdigit(int c)
 {
-	write(fd, &c, 1);
+	return (c >= '0' && c <= '9');
 }
